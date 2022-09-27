@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin: 0px;
+        }
+        h1 {
+            background-color: rgb(240, 116, 27);
+            text-align: center;
+            text-decoration: underline;
+        }
+        header {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            text-align: center;
+            background-color: rgb(243, 153, 43);
+            padding: 3px;
+            box-shadow: 2px 3px 6px 2px rgb(0 0 0 / 34%);
+        }
+        nav > a {            
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        main {
+            background-color: lightblue;
+            padding: 15px;
+            margin: 10px;
+            text-align: justify;
+            border-radius: 20px;
+            box-shadow: 6px 3px 10px 4px rgba(0, 0, 0, 0.362);
+        }
+        p {
+            margin: 15px;
+            text-decoration: none;
+        }
+        #assuntos {
+            background-color: bisque;
+            margin-right: 0px;
+            text-decoration: solid;
+            font-weight: bold
+        }
+        h2 {
+            text-align: center;
+        }
+        article {
+            background-color: lightsalmon;
+        }
+        article > aside{
+            text-align: center;
+            background-color: rgb(224, 104, 57);
+            color: aliceblue
+            
+        }
+        footer {
+            background-color: orangered;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            margin-left: 300px;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(224, 171, 66, 0.593);
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+   <header>
+<h1>Meu Site</h1>
+<nav>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+</nav>
+   </header>
+   <main>
+    <section id="assuntos">
+        <p>Esportes, Política Tecnologia</p>
+
+    </section>
+    <section id="notícias">
+        <article>
+            <h2>Notícia sobre Brasil</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur aliquid, amet nihil porro expedita sunt consequatur eveniet perspiciatis totam, dicta ea! Fugiat minima, necessitatibus natus nostrum fuga quibusdam laborum eos?</p>
+            <aside>
+                <p>Artigo escrito por Isaac Dantas</p>
+            </aside>
+        </article>
+    </section>
+   </main>
+   <footer>
+    <p><strong>Criado por Isaac Dantas</strong></p>
+   </footer>
+   <div id="bola"></div>
+</body>
+</html>
