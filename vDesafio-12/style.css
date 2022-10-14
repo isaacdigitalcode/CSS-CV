@@ -8,6 +8,8 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;;
     --fonte3: 'Courgette', cursive;
+    --cor01: black;
+    --cor02: rgba(0, 0, 0, 0.651);
 }
 
 * {
@@ -22,8 +24,8 @@ html, body {
 }
 
 header {
-    background-color:  black;
-    color: white;
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor01));
+    color: white;     
     text-align: center;
 }
 header > h1 {
@@ -31,6 +33,7 @@ header > h1 {
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 10vw;
+    text-shadow: inset 4px 4px 3px 0px black;
 }
 header > p {
     padding-bottom: 50px;
@@ -52,6 +55,9 @@ section {
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+section > p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color: black;    
@@ -59,14 +65,28 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.505);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.208);
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.603);
+    text-shadow: 1px 1px 0px black;
+    
+}
+section#img01 {
+    background-image: url('../vDesafio-12/imagens/arvores-flor-de-cerejeira.jpg');
+    background-position: bottom center;    
+}
+section#img02 {
+    background-image: url('../vDesafio-12/imagens/carta-e-cantea-antigo.jpg');
+    background-position: center center;    
 }
 footer {
-    background-color: black;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));    
     color: white;
     text-align: center;
     padding: 10px;
