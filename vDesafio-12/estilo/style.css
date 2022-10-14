@@ -78,11 +78,11 @@ section.imagem > p {
     
 }
 section#img01 {
-    background-image: url('../vDesafio-12/imagens/arvores-flor-de-cerejeira.jpg');
+    background-image: url('../imagens/arvores-flor-de-cerejeira.jpg');
     background-position: bottom center;    
 }
 section#img02 {
-    background-image: url('../vDesafio-12/imagens/carta-e-cantea-antigo.jpg');
+    background-image: url('../imagens/carta-e-cantea-antigo.jpg');
     background-position: center center;    
 }
 footer {
