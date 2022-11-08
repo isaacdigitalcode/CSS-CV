@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-<body>
-    <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+<body>   
+    <h1>Meu primeiro formulário</h1> <!--Em method="get" fica visivel os dados na URL, Já em method="post" os dados não ficam visiveis alé de ser possível o emvio de mais de 3 mil bytes onde no get é o limite-->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
